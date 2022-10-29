@@ -4,9 +4,7 @@
       v-for="(item, i) in allQuestions"
       @click="toggleExpand(i)"
       :key="i"
-      :question="item.question"
-      :answer="item.answer"
-      :isOpened="item.isOpened"
+      v-bind="item"
     />
   </section>
 </template>
@@ -23,6 +21,7 @@ export default {
   },
   methods: {
     toggleExpand(index) {
+      // Calls the function that toggles the card's expand with specific index
       this.$store.commit("toggleExpand", index);
     },
   },
