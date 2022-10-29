@@ -51,6 +51,9 @@ body {
   stroke: #17a2b8;
   background-color: #e8f9fc;
 }
+.chevronOpened {
+  transform: rotateX(180deg);
+}
 
 /* ----- Cards ----- */
 #questions {

@@ -2,12 +2,12 @@
   <div class="question-card">
     <div class="card-header">
       <BaseQuestionMarkIcon />
-      <slot name="question" />
-      <BaseChevronDownIcon />
+      <slot name="question"></slot>
+      <BaseChevronDownIcon :class="{ chevronOpened: isOpened }" />
     </div>
     <transition name="answer">
       <div class="card-body" v-if="isOpened">
-        <slot name="answer" />
+        <slot name="answer"></slot>
       </div>
     </transition>
   </div>

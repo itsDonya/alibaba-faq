@@ -4,7 +4,6 @@
       <h2 class="question-card__question">{{ question }}</h2>
     </template>
     <template #answer>
-      <!-- <p class="question-card__answer" :class="{ opened: isOpened }"> -->
       <p class="question-card__answer">
         {{ answer }}
       </p>
