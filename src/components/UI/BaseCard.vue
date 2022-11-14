@@ -18,7 +18,11 @@ import BaseQuestionMarkIcon from "./BaseQuestionMarkIcon.vue";
 import BaseChevronDownIcon from "./BaseChevronDownIcon.vue";
 export default {
   props: {
-    isOpened: Boolean,
+    isOpened: {
+      type: Boolean,
+      required: true,
+      default: false,
+    },
   },
   components: {
     BaseQuestionMarkIcon,
